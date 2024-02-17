@@ -6,7 +6,11 @@
   <title>InZu Smart Ticketing...</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
 
   <!-- nav bar -->
@@ -28,9 +32,176 @@
 
   <!-- Hero section -->
   <section>
-    <div class="background-in">
+    <div class="hero">
+      <div class="hero min-h-screen width: 1170px height: 550px max-width:1170px " style="background-image: url(images/banner.png);">
+      
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-4xl font-bold">End-To-End Travel With<br>
+              <span class="text-green-400">P Paribahan</span></h1>
+            <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="btn btn-primary bg-green-500 text-black font-bold">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    
+
+    <!-- statistics -->
+    <div class="stat" style="border-radius: 24px;">
+      <div class="stats shadow">
+  
+        <div class="stat flex items-center">
+          <div class="stat-figure text-primary">
+            <img src="images/people.png">
+          </div>
+          <div class="flex flex-col">
+            <div class="stat-value text-primary">500K+</div>
+          <div class="stat-desc">Registerd users</div>
+          </div>
+          
+          
+        </div>
+        
+        <div class="stat flex items-center">
+          <div class="stat-figure text-secondary">
+            <img src="images/ticket-cupon.png">
+          </div>
+          <div class="flex flex-col">
+            <div class="stat-value text-secondary">1.7Lacks</div>
+          <div class="stat-desc">Ticket sold</div>
+        </div>
+          
+          
+        </div>
+        
+        <div class="stat flex items-center">
+          <div class="w-16 rounded-full">
+            <img src="images/stoppage.png" />
+          </div>
+          <div class="flex flex-col">
+            <div class="stat-value">80K</div>
+          <div class="stat-title">Rental partners</div>
+          </div>
+          
+        
+        
+        </div>
+        
+      </div>
+
+    </div>
+
+  <!-- offers section -->
+  <div class="text-center font-extrabold text-black text-4xl mt-[40px] mb-10">
+   <h2>Best offers for you</h2>
+  </div>
+
+  <div class="flex items-center justify-between mx-auto space-x-4 w-[100%]" style="border: 2px solid red;">
+    <div class=" flex justify-around items-center bg-orange-400 w-[50%] text-center">
+      <div>
+        <h1 class="text-4xl text-black font-extrabold">15% OFF</h1>
+        <h4>on your next purchase</h4>
+        <p>use by January 2024</p>
+      </div>
+      <img src="images/cupon-devider.png">
+      <div>
+        <h1 class="text-4xl text-black font-extrabold">NEW15</h1>
+        <p>Coupon Code</p>
+      </div>
+    </div>
+
+    <div class="flex justify-around items-center bg-red-600 w-[50%] text-center">
+      <div>
+        <h1 class="text-4xl text-black font-extrabold">20% OFF</h1>
+        <h4>on your next purchase</h4>
+        <p>use by January 2024</p>
+      </div>
+      <img src="images/cupon-devider.png">
+      <div class="flex flex-col">
+         <h1 class="text-4xl text-black font-extrabold">Couple 20</h1>
+         <p>Coupon Code</p>
+      </div>
+
+    </div>
+  </div> 
+  <div class="text-center mt-20 tex-3xl font-semibold mb-30 ">
+    <button class="btn  text-green-500 border-[4px] border-red-200">See All Offers</button>
+  </div>
+
+  </section>
+
+  <!-- bus seat info -->
+  <section>
+    <div class="border-[4px] border-red-600 text-center">
+      <div class="text-center py-8-50 h-[200px] items-center" style="background-color: rgb(247, 248, 248);">
+        <h1 class="text-black text-5xl text-center">
+          Inzu Paribahan
+        </h1>
+        <p>The most Comfortable, Trusted and symbol of without Tense Journey</p>
+      </div>
+      <div class="flex justify-between w-[100%]">
+        <div class="w-[70%]">
+          <div class="flex justify-between items-center mt-30">
+
+            <!-- headline with car symbol -->
+            <div class=" flex text-center gap-4 mb-10">
+              <img src="images/bus-logo.png" alt="" class="w-[60px] h-[40px]">
+              <div>
+                <h1 class="text-black text-3xl">InZu Paribahan</h1>
+              <p>Coach-009-WEB ! AC Business</p>
+              </div>
+      
+            </div>
+            <!-- 40 seats -->
+
+            <div class="flex text-center gap-4">
+              <img class="w-[40px] h-[40px]" src="images/seat-green.png" alt="">
+              <p class="font-bold  text-2xl  text-green-500"><span>40</span> seats left</p>
+      
+            </div>
+            
+            
+      </div>
+      <!-- input section -->
+      <div>
+        <div style="background-color: rgb(247, 248, 248);" class="flex justify-between text-center px-4 h-[60px]">
+          <p >Route</p>
+          <p>Dhaka-Chattogram</p>
+        </div>
+        <div style="background-color: rgb(247, 248, 248);" class="flex justify-between text-center px-4 h-[60px]">
+          <p>Departure Time</p>
+          <p>9.00pm</p>
+        </div>
+        <div style="background-color: rgba(3, 7, 18, 0.05);" class="flex justify-around text-center px-4 space-x-6 h-[60px]">
+          <p>Boarding Point-Kamalapur</p>
+          <p>Dropping Point-Mirsharai</p>
+          <p>Est. Time-11 Hour</p>
+        </div>
+
+            
+      </div>
+      
+        
+      </div>
+      <img src="images/info-devider.png" alt="" class="w-[50px] h-[500px]">
+      
+      <div class=" flex justify-center items-center w-[30%] text-center">
+        
+        <div class="flex flex-col items-center justify-center text-center">
+          <img src="images/fare.png" alt="">
+          <h1 class="text-4xl font-bold" >550 taka</h1>
+          <p>Per Seat</p>
+
+        </div>
+      </div>
       
     </div>
+
+    
+
   </section>
 
   
