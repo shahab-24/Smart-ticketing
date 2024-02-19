@@ -6,13 +6,14 @@
   <title>InZu Smart Ticketing...</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
 
 
 </head>
 
 <body  class="min-h-screen w-[80%] mx-auto">
-
+  <section id="show" class="body">
+    
   <!-- nav bar -->
   <div class="flex justify-between items-center px-10 pt-10 border mb-20 mt-10">
     <h1 class="text-black font-extrabold text-3xl">InZu-Ticket</h1>
@@ -31,7 +32,7 @@
   </div>
 
   <!-- Hero section -->
-  <section>
+  <section id="hero-section">
     <div class="hero">
       <div class="hero min-h-screen width: 1170px height: 550px max-width:1170px " style="background-image: url(images/banner.png);">
       
@@ -40,7 +41,7 @@
             <h1 class="mb-5 text-4xl font-bold">End-To-End Travel With<br>
               <span class="text-green-400">P Paribahan</span></h1>
             <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button id="btn" class="btn btn-primary bg-green-500 text-black font-bold"  onclick="showParibahanPage()">Buy Tickets</button>
+            <button class="btn bg-green-500"><a href="#bus-section" src="#bus-section">Buy Tickets</a></button>
           </div>
         </div>
       </div>
@@ -134,7 +135,7 @@
   </section>
 
   <!-- bus seat info -->
-  <section >
+  <section id="bus-section" >
     <div id="bus-page">
       <div class="text-center">
       
@@ -229,57 +230,82 @@
         </div>
 
         <!-- seat no -->
-        <div style="background-color: whitesmoke;" class="grid grid-cols-5 space-x-4 space-y-4 m-4 gap-4">
-          <button>A</button>
+        <div style="background-color: whitesmoke;" class="grid space-x-4 space-y-4 m-4 gap-4">
+          <div class="grid grid-cols-5">
+            <button>A</button>
           <button id="A1" class="seat-no btn">A1</button>
           <button id="A2" class="seat-no btn">A2</button>
           <button id="A3" class="seat-no btn">A3</button>
           <button id="A4" class="seat-no btn">A4</button>
-          <button>B</button>
+          </div>
+          <div class="grid grid-cols-5">
+            <button>B</button>
           <button id="B1" class="seat-no btn">B1</button>
           <button id="B2" class="seat-no btn">B2</button>
           <button id="B3" class="seat-no btn">B3</button>
           <button id="B4" class="seat-no btn">B4</button>
-          <button>C</button>
+          </div>
+          <div class="grid grid-cols-5">
+            <button>C</button>
           <button id="c1" class="seat-no btn">C1</button>
           <button id="c2" class="seat-no btn">C2</button>
           <button id="c3" class="seat-no btn">C3</button>
           <button id="c4" class="seat-no btn">C4</button>
-          <button>D</button>
+          </div>
+          
+          <div class="grid grid-cols-5">
+            <button>D</button>
           <button class="seat-no btn">D1</button>
           <button class="seat-no btn">D2</button>
           <button class="seat-no btn">D3</button>
           <button class="seat-no btn">D4</button>
-          <button>E</button>
+          </div>
+          <div class="grid grid-cols-5">
+            <button>E</button>
           <button class="seat-no btn">E1</button>
           <button class="seat-no btn">E2</button>
           <button class="seat-no btn">E3</button>
           <button class="seat-no btn">E4</button>
-          <button>F</button>
+          </div>
+          
+          <div class="grid grid-cols-5">
+            <button>F</button>
           <button class="seat-no btn">F1</button>
           <button class="seat-no btn">F2</button>
           <button class="seat-no btn">F3</button>
           <button class="seat-no btn">F4</button>
-          <button>G</button>
+          </div>
+          <div class="grid grid-cols-5">
+            <button>G</button>
           <button class="seat-no btn">G1</button>
           <button class="seat-no btn">G2</button>
           <button class="seat-no btn">G3</button>
           <button class="seat-no btn">G4</button>
-          <button>H</button>
+          </div>
+          
+          <div class="grid grid-cols-5">
+            <button>H</button>
           <button class="seat-no btn">H1</button>
           <button class="seat-no btn">H2</button>
           <button class="seat-no btn">H3</button>
           <button class="seat-no btn">H4</button>
-          <button>I</button>
+          </div>
+
+          <div class="grid grid-cols-5">
+            <button>I</button>
           <button class="seat-no btn">I1</button>
           <button class="seat-no btn">I2</button>
           <button class="seat-no btn">I3</button>
           <button class="seat-no btn">I4</button>
-          <button>J</button>
+          </div>
+          
+          <div class="grid grid-cols-5">
+            <button>J</button>
           <button class="seat-no btn">J1</button>
           <button class="seat-no btn">J2</button>
           <button class="seat-no btn">J3</button>
           <button class="seat-no btn">J4</button>
+          </div>
 
          
           
@@ -299,14 +325,16 @@
             <div>Class</div>
             <div>Fare</div>
           </div>
-          <ul class="" id="select-list">
+          <hr>
+          <ul id="parent-div">
+            
 
           </ul>
 
 
           <div class="flex justify-between">
             <p class="text-black font-bold" >Total Price</p>
-            <div class="text-black font-bold">BDT <span>0000</span>
+            <div class="text-black font-bold">BDT <span id="total-cost">0</span>
               </div>
           </div>
 
@@ -325,7 +353,7 @@
             <div>
               <p class="text-black font-bold">Grand Total</p>
             </div>
-            <div class="text-black font-bold">BDT <span>0000</span>
+            <div class="text-black font-bold">BDT <span id="grand-total">0</span>
             </div>
           </div>
           <!-- input section-------------- -->
@@ -363,25 +391,37 @@
   
   </section>
 
+  
+
+  <div class="flex justify-between footer p-10 bg-neutral text-neutral-content mt-20">
+    <div>
+      <h1 class="text-white font-extrabold text-3xl">InZu-Ticket</h1>
+      <p>The most Comfortable, Trusted and symbol of<br> without Tense Journey.
+        Hope you would feel better with us..</p>
+    </div>
+    <div class="flex flex-col">
+      <h1 class="text-white font-extrabold text-3xl">Download our Apps</h1>
+      <div>
+        <img src="images/playstore.png" alt="">
+      </div>
+      
+
+    </div>
+  </div>
+
   <!-- Footer-------------- -->
+  </section>
+
   
   
       
-      <div class="flex justify-between footer p-10 bg-neutral text-neutral-content mt-20">
-        <div>
-          <h1 class="text-white font-extrabold text-3xl">InZu-Ticket</h1>
-          <p>The most Comfortable, Trusted and symbol of<br> without Tense Journey.
-            Hope you would feel better with us..</p>
-        </div>
-        <div class="flex flex-col">
-          <h1 class="text-white font-extrabold text-3xl">Download our life</h1>
-          <div>
-            <img src="images/playstore.png" alt="">
-          </div>
-          
+      
 
+      <section id="success" class="hidden">
+        <div>
+          <img src="images/success.png" alt="">
         </div>
-      </div>
+      </section>
 
     
     

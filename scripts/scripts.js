@@ -5,7 +5,3 @@
 
 
 
-function showParibahanPage(){
-showElementById('bus-page');
-
-}

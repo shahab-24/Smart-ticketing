@@ -1,14 +1,5 @@
-*{
-  box-sizing: border-box;
-  margin:0;
-  padding: 30px 50px;
-}
 
-.hero{
-  position: relative;
-}
-.stat{
-  position: absolute;
-  margin-top: 80px
-  
+li{
+  display: flex;
+  justify-content: space-around;
 }
