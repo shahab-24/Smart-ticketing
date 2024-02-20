@@ -12,20 +12,20 @@
 </head>
 
 <body  class="min-h-screen w-[80%] mx-auto">
-  <section id="show" class="body">
+  <section id="show-section" class="body">
     
   <!-- nav bar -->
-  <div class="flex justify-between items-center px-10 pt-10 border mb-20 mt-10">
-    <h1 class="text-black font-extrabold text-3xl">InZu-Ticket</h1>
+  <div class="flex justify-between items-center px-10 py-10 border  mb-20 mt-10">
+    <h1 class="text-black font-extrabold text-5xl">In<span class="text-green-500">Z</span>u-Ticket</h1>
     <nav>
-      <ul class="flex justify-around gap-4">
+      <ul class="flex justify-around text-xl font-semibold  gap-4">
         <li>Home</li>
         <li>About</li>
         <li>Destination</li>
         <li>Search</li>
       </ul>
     </nav>
-    <button class="btn bg-[rgba(29, 209, 0, 0.1)] text-center">
+    <button class="btn bg-[rgba(29, 209, 0, 0.1)] text-center font-bold text-2xl">
       Button
      <img src="images/bus-icon.png" alt="">
     </button> 
@@ -34,14 +34,14 @@
   <!-- Hero section -->
   <section id="hero-section">
     <div class="hero">
-      <div class="hero min-h-screen width: 1170px height: 550px max-width:1170px " style="background-image: url(images/banner.png);">
+      <div class="hero min-h-screen width: 1170px height: 550px max-width:1170px rounded-3xl " style="background-image: url(images/banner.png);">
       
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
-            <h1 class="mb-5 text-4xl font-bold">End-To-End Travel With<br>
+            <h1 class="mb-5 text-4xl font-bold text-white">End-To-End Travel With<br>
               <span class="text-green-400">P Paribahan</span></h1>
             <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <button class="btn bg-green-500"><a href="#bus-section" src="#bus-section">Buy Tickets</a></button>
+            <button class="btn font-bold text-2xl bg-green-500"><a href="#bus-section" src="#bus-section">Buy Tickets</a></button>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
    <h2>Best offers for you</h2>
   </div>
 
-  <div class="flex items-center justify-between mx-auto space-x-4 w-[100%]" style="border: 2px solid red;">
+  <div class="flex items-center justify-between mx-auto space-x-4 w-[100%]">
     <div class=" flex justify-around items-center bg-orange-400 w-[50%] text-center">
       <div>
         <h1 class="text-4xl text-black font-extrabold">15% OFF</h1>
@@ -122,14 +122,14 @@
       </div>
       <img src="images/cupon-devider.png">
       <div class="flex flex-col">
-         <h1 class="text-4xl text-black font-extrabold">Couple 20</h1>
+         <h1 id="couple-20" class="text-4xl text-black font-extrabold">Couple 20</h1>
          <p>Coupon Code</p>
       </div>
 
     </div>
   </div> 
   <div class="text-center mt-20 tex-3xl font-semibold mb-30 ">
-    <button class="btn  text-green-500 border-[4px] border-red-200">See All Offers</button>
+    <button class="btn px-6  text-green-500 border-[4px] mb-20 border-green-600 text-2xl bg-white">See All Offers</button>
   </div>
 
   </section>
@@ -137,13 +137,13 @@
   <!-- bus seat info -->
   <section id="bus-section" >
     <div id="bus-page">
-      <div class="text-center">
+      <div class="text-center px-10 border-[2px] border-green-600" style="border-radius: 30px;">
       
         <div class="bg-[#F7F8F8] gap-6 space-y-6">
-          <h1 class="text-black text-5xl text-center font-bold bg-[#F7F8F8]">
-            Inzu Paribahan
+          <h1 class="text-black pt-20 text-5xl text-center font-bold bg-[#F7F8F8]">
+            In<span class="text-green-500">Z</span>u Paribahan
           </h1>
-          <p class="mb-20 bg-[#F7F8F8]">The most Comfortable, Trusted and symbol of without Tense Journey. <br> Hope you would feel better with us...</p>
+          <p class="mb-20 pb-14 bg-[#F7F8F8]">The most Comfortable, Trusted and symbol of without Tense Journey. <br> Hope you would feel better with us...</p>
         </div>
       
       <div class="flex justify-between">
@@ -151,7 +151,7 @@
           <div class="flex justify-between items-center mt-30">
 
             <!-- headline with car symbol -->
-            <div class=" flex text-center gap-4 mb-10">
+            <div class=" flex text-center items-center gap-4 mb-10">
               <img src="images/bus-logo.png" alt="" class="w-[60px] h-[40px]">
               <div>
                 <h1 class="text-black text-3xl">InZu Paribahan</h1>
@@ -161,9 +161,9 @@
             </div>
             <!-- 40 seats -->
 
-            <div class="flex text-center gap-4">
+            <div class="flex text-center gap-4 bg-green-200 px-4px">
               <img class="w-[40px] h-[40px]" src="images/seat-green.png" alt="">
-              <p class="font-bold  text-2xl  text-green-500"><span id="forty">40</span> seats left</p>
+              <p class="font-bold  text-xl  text-green-500"><span id="forty">40</span> seats left</p>
       
             </div>
             
@@ -211,9 +211,10 @@
 
 <!-- bus seat ------------->
       <div>
-        <h4>Select Your Seat</h4> 
+        <h2 class="text-left text-xl font-bold mb-4">Select Your Seat</h2> 
+        <hr>
 
-        <div class="flex justify-between gap-6">
+        <div class="flex justify-between gap-6 m-4">
           <div class="flex">
             <div><img src="images/seat-gray.png" alt=""></div>
             <p>Available</p>
@@ -221,7 +222,9 @@
           <div class="flex">
             <div><img src="images/seat-green.png" alt=""></div>
             <p>Selected</p>
+            <hr>
           </div>
+          
   
           
         </div>
@@ -230,22 +233,22 @@
         </div>
 
         <!-- seat no -->
-        <div style="background-color: whitesmoke;" class="grid space-x-4 space-y-4 m-4 gap-4">
-          <div class="grid grid-cols-5">
+        <div style="background-color: white;" class="grid items-center space-x-4 space-y-4 m-4 gap-4">
+          <div class="grid grid-cols-5 gap-6">
             <button>A</button>
           <button id="A1" class="seat-no btn">A1</button>
           <button id="A2" class="seat-no btn">A2</button>
           <button id="A3" class="seat-no btn">A3</button>
           <button id="A4" class="seat-no btn">A4</button>
           </div>
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>B</button>
           <button id="B1" class="seat-no btn">B1</button>
           <button id="B2" class="seat-no btn">B2</button>
           <button id="B3" class="seat-no btn">B3</button>
           <button id="B4" class="seat-no btn">B4</button>
           </div>
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>C</button>
           <button id="c1" class="seat-no btn">C1</button>
           <button id="c2" class="seat-no btn">C2</button>
@@ -253,14 +256,14 @@
           <button id="c4" class="seat-no btn">C4</button>
           </div>
           
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>D</button>
           <button class="seat-no btn">D1</button>
           <button class="seat-no btn">D2</button>
           <button class="seat-no btn">D3</button>
           <button class="seat-no btn">D4</button>
           </div>
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>E</button>
           <button class="seat-no btn">E1</button>
           <button class="seat-no btn">E2</button>
@@ -268,14 +271,14 @@
           <button class="seat-no btn">E4</button>
           </div>
           
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>F</button>
           <button class="seat-no btn">F1</button>
           <button class="seat-no btn">F2</button>
           <button class="seat-no btn">F3</button>
           <button class="seat-no btn">F4</button>
           </div>
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>G</button>
           <button class="seat-no btn">G1</button>
           <button class="seat-no btn">G2</button>
@@ -283,7 +286,7 @@
           <button class="seat-no btn">G4</button>
           </div>
           
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>H</button>
           <button class="seat-no btn">H1</button>
           <button class="seat-no btn">H2</button>
@@ -291,7 +294,7 @@
           <button class="seat-no btn">H4</button>
           </div>
 
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>I</button>
           <button class="seat-no btn">I1</button>
           <button class="seat-no btn">I2</button>
@@ -299,7 +302,7 @@
           <button class="seat-no btn">I4</button>
           </div>
           
-          <div class="grid grid-cols-5">
+          <div class="grid grid-cols-5 gap-6">
             <button>J</button>
           <button class="seat-no btn">J1</button>
           <button class="seat-no btn">J2</button>
@@ -317,22 +320,24 @@
   
         <!-- seat input section and price -->
   
-        <div style="border-left: 2px dashed green;">
-          <h4>Select Your Seat</h4>
+        <div style="border-left: 2px dashed green;" class="space-x-4 gap-4 text-left">
+          <h2 class="text-left text-xl font-bold px-4">Select Your Seat</h2>
 
-          <div class="grid grid-cols-3 bg-[#F7F8F8]">
-            <div class="px-6">Seat <span id="zero" class="bg-green-500 text-white font-bold">0</span></div>
+          <div class="flex justify-around  bg-[#F7F8F8]">
+            <div>Seat <span id="zero" class="bg-green-500 text-white font-bold px-4 rounded-lg">0</span></div>
             <div>Class</div>
             <div>Fare</div>
           </div>
           <hr>
-          <ul id="parent-div">
+          <div id="parent-div" class="">
+
+          </div>
             
+          
 
-          </ul>
-
-
-          <div class="flex justify-between">
+<hr>
+          <div class="flex justify-between py-6">
+            
             <p class="text-black font-bold" >Total Price</p>
             <div class="text-black font-bold">BDT <span id="total-cost">0</span>
               </div>
@@ -340,11 +345,11 @@
 
 
           <div class="flex justify-between">
-            <div class="w-[90%]">
-              <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <div class="w-[90%] rounded-xl">
+              <input type="text" placeholder="Coupon" class="input input-bordered w-full max-w-xs">
             </div>
             <div>
-              <button class="btn w-[100%] bg-green-500 text-white font-bold rounded-lg">Apply</button>
+              <button id="apply-btn" class="btn w-[100%] px-10 bg-green-500 text-white text-xl font-bold rounded-lg">Apply</button>
             </div>
           </div>
 
@@ -356,9 +361,9 @@
             <div class="text-black font-bold">BDT <span id="grand-total">0</span>
             </div>
           </div>
-          <!-- input section-------------- -->
+         
 
-          <!-- <div>
+          <div>
             <label class="input input-bordered flex items-center gap-2">
   
 </label>
@@ -379,14 +384,19 @@
 </label>
 
 
+
 <div class="">
-  <button class="btn w-[100%] bg-green-500 text-white font-bold rounded-lg">Next</button>
+  <button onclick="myFunction()" id="next-modal" class="btn w-[100%] bg-green-500 text-white font-bold rounded-lg">Next</button>
+</div>
+<div class="flex justify-between">
+  <p>Terms & Conditions...</p>
+  <p>Cancellation Policy...</p>
 </div>
           </div>
         </div>
   
       </div>
-    </div> -->
+    </div> 
     
   
   </section>
@@ -408,6 +418,10 @@
 
     </div>
   </div>
+  <!-- modal--------------- -->
+  <div>
+
+
 
   <!-- Footer-------------- -->
   </section>
@@ -417,9 +431,13 @@
       
       
 
-      <section id="success" class="hidden">
-        <div>
-          <img src="images/success.png" alt="">
+      <section id="success" class="hidden" class="flex justify-center items-center mt-10 m-[30px]">
+        <div class="w-[40%] h-[30%] flex flex-col justify-center items-center text-center bg-cover">
+          <img class="bg-cover w-[40%] h-[30%]" src="images/success.png" alt="">
+          <h1 class="font-bold text-5xl text-green-600">success</h1>
+          <p>Thanks for booking our bus seats</p>
+          <p>We are working hard to find the best service.</p>
+          <button class="bg-[#27AE60] rounded-lg font-bold text-3xl mt-6 text-white px-10 py-4">Continue</button>
         </div>
       </section>
 

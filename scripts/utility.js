@@ -1,9 +1,10 @@
 // function showElementById(elementId){
 //   document.getElementById(elementId);
 // }
-let seatNo = 40;
+let seatNo = 39;
 let zero= 1;
 let total = 0;
+
 
 
 const seats = document.getElementsByClassName('seat-no');
@@ -19,15 +20,14 @@ console.log(e.target.textContent);
 
       document.getElementById('zero').innerText = zero;
       zero++;
-    document.getElementById('forty').innerText = seatNo;
+      document.getElementById('forty').innerText = seatNo;
     seatNo = seatNo - 1;
+    
     seat.classList.add('bg-green-500');
     }
     const seatName = e.target.innerText;
-
+    
     const price = 550;
-    
-    
     const economy1 = 'economy';
 
     const parentDiv = document.getElementById('parent-div');
@@ -36,12 +36,11 @@ console.log(e.target.textContent);
     p1.innerText = seatName;
   
    
-   
     const p2 = document.createElement('p');
     p2.innerText = economy1;
-
     const p3 = document.createElement('p');
     p3.innerText = price;
+
     li.appendChild(p1);
     li.appendChild(p2);
     li.appendChild(p3);
@@ -61,10 +60,31 @@ console.log(e.target.textContent);
   
   setInnerText('total-cost', sum);
   setInnerText('grand-total', sum2);
+  
+  
 
     
     });
 }
+
+const nextButton = document.getElementById('next-modal');
+nextButton.addEventListener('click', function(){
+  const hideModal = document.getElementById('show-section');
+  hideModal.classList.add('hidden');
+
+  const showModal = document.getElementById('success');
+  showModal.classList.remove('hidden');
+
+})
+
+const applyBtn = document.getElementById('apply-btn');
+
+
+
+
+
+
+
 
 function setInnerText(id, value){
   document.getElementById(id).innerText = value;
